@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="4368" started-at="2021-06-19T14:39:58Z" finished-at="2021-06-19T14:40:02Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.runnerpkg.Runner@3c0f93f1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="4368" started-at="2021-06-19T14:39:58Z" finished-at="2021-06-19T14:40:02Z">
+      <class name="com.qa.runnerpkg.Runner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qa.runnerpkg.Runner@3c0f93f1]" name="setUpClass" is-config="true" duration-ms="80" started-at="2021-06-20T00:39:58Z" finished-at="2021-06-20T00:39:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.runnerpkg.Runner@3c0f93f1]" name="runScenario" duration-ms="1594" started-at="2021-06-20T00:39:58Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-20T00:40:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that attempt to register a weather station without an API key"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["This feature is to test open APIs of the weather stations"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.runnerpkg.Runner@3c0f93f1]" name="runScenario" duration-ms="575" started-at="2021-06-20T00:40:00Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-20T00:40:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To successfully register two stations"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["This feature is to test open APIs of the weather stations"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.runnerpkg.Runner@3c0f93f1]" name="runScenario" duration-ms="577" started-at="2021-06-20T00:40:00Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-20T00:40:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To successfully register two stations"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["This feature is to test open APIs of the weather stations"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.runnerpkg.Runner@3c0f93f1]" name="runScenario" duration-ms="599" started-at="2021-06-20T00:40:01Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-20T00:40:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To verify registered station are present in DB"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["This feature is to test open APIs of the weather stations"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.runnerpkg.Runner@3c0f93f1]" name="runScenario" duration-ms="841" started-at="2021-06-20T00:40:02Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-20T00:40:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To verify registered station are present in DB"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["This feature is to test open APIs of the weather stations"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.qa.runnerpkg.Runner@3c0f93f1]" name="tearDownClass" is-config="true" duration-ms="62" started-at="2021-06-20T00:40:02Z" finished-at="2021-06-20T00:40:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.qa.runnerpkg.Runner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

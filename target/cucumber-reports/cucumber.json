@@ -1,0 +1,484 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-19T14:39:58.782Z",
+        "before": [
+          {
+            "result": {
+              "duration": 734465,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeSetUp.runSetup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "To validate that attempt to register a weather station without an API key",
+        "description": "",
+        "id": "this-feature-is-to-test-open-apis-of-the-weather-stations;to-validate-that-attempt-to-register-a-weather-station-without-an-api-key;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 342029910,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User has an invalid \"asghsa1254256\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"asghsa1254256\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TestinvalidTokenStep.user_has_an_invalid(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 865642500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User hit the \"poststations\" endpoint with \"testdata1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"poststations\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"testdata1\"",
+                  "offset": 42
+                }
+              ],
+              "location": "TestStationRegStep.user_hit_the_endpoint_with(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1732228,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify the 401 code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 11
+                }
+              ],
+              "location": "TestStationRegStep.verify_the_success_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 252253739,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "check more outcomes like \"Invalid API key. Please see http://openweathermap.org/faq#error401 for more info.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid API key. Please see http://openweathermap.org/faq#error401 for more info.\"",
+                  "offset": 25
+                }
+              ],
+              "location": "TestinvalidTokenStep.check_more_outcomes_like(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testsuite"
+          },
+          {
+            "name": "@negative"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-19T14:40:00.251Z",
+        "before": [
+          {
+            "result": {
+              "duration": 61366,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeSetUp.runSetup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "To successfully register two stations",
+        "description": "",
+        "id": "this-feature-is-to-test-open-apis-of-the-weather-stations;to-successfully-register-two-stations;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1918344,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User has a valid token",
+            "match": {
+              "location": "TestStationRegStep.user_has_a_valid_token()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 570688189,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User hit the \"poststations\" endpoint with \"testdata1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"poststations\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"testdata1\"",
+                  "offset": 42
+                }
+              ],
+              "location": "TestStationRegStep.user_hit_the_endpoint_with(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 81909,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Verify the 201 code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 11
+                }
+              ],
+              "location": "TestStationRegStep.verify_the_success_code(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testsuite"
+          },
+          {
+            "name": "@postive"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-19T14:40:00.826Z",
+        "before": [
+          {
+            "result": {
+              "duration": 65113,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeSetUp.runSetup()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "To successfully register two stations",
+        "description": "",
+        "id": "this-feature-is-to-test-open-apis-of-the-weather-stations;to-successfully-register-two-stations;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 803940,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User has a valid token",
+            "match": {
+              "location": "TestStationRegStep.user_has_a_valid_token()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 573764621,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User hit the \"poststations\" endpoint with \"testdata2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"poststations\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"testdata2\"",
+                  "offset": 42
+                }
+              ],
+              "location": "TestStationRegStep.user_hit_the_endpoint_with(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 129020,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Verify the 201 code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 11
+                }
+              ],
+              "location": "TestStationRegStep.verify_the_success_code(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testsuite"
+          },
+          {
+            "name": "@postive"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-19T14:40:01.404Z",
+        "before": [
+          {
+            "result": {
+              "duration": 91539,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeSetUp.runSetup()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "To verify registered station are present in DB",
+        "description": "",
+        "id": "this-feature-is-to-test-open-apis-of-the-weather-stations;to-verify-registered-station-are-present-in-db;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 838899,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User has a valid token",
+            "match": {
+              "location": "TestStationRegStep.user_has_a_valid_token()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 586761259,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User hit the \"getstations\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"getstations\"",
+                  "offset": 13
+                }
+              ],
+              "location": "TestVerifyStationStep.user_hit_the(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 132164,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Verify the 200 code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 11
+                }
+              ],
+              "location": "TestStationRegStep.verify_the_success_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9451610,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Verify \"testdata1\" in response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testdata1\"",
+                  "offset": 7
+                }
+              ],
+              "location": "TestVerifyStationStep.verify_in_response(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testsuite"
+          },
+          {
+            "name": "@postive"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-19T14:40:02.003Z",
+        "before": [
+          {
+            "result": {
+              "duration": 64377,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeSetUp.runSetup()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "To verify registered station are present in DB",
+        "description": "",
+        "id": "this-feature-is-to-test-open-apis-of-the-weather-stations;to-verify-registered-station-are-present-in-db;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 603616,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User has a valid token",
+            "match": {
+              "location": "TestStationRegStep.user_has_a_valid_token()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 837325147,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User hit the \"getstations\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"getstations\"",
+                  "offset": 13
+                }
+              ],
+              "location": "TestVerifyStationStep.user_hit_the(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110838,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Verify the 200 code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 11
+                }
+              ],
+              "location": "TestStationRegStep.verify_the_success_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1939860,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Verify \"testdata2\" in response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testdata2\"",
+                  "offset": 7
+                }
+              ],
+              "location": "TestVerifyStationStep.verify_in_response(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testsuite"
+          },
+          {
+            "name": "@postive"
+          }
+        ]
+      }
+    ],
+    "name": "This feature is to test open APIs of the weather stations",
+    "description": "",
+    "id": "this-feature-is-to-test-open-apis-of-the-weather-stations",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/apitesting.feature",
+    "tags": [
+      {
+        "name": "@testsuite",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
