@@ -1,5 +1,5 @@
 # Compiled class file
-*.class
+
 
 # Log file
 *.log
@@ -25,7 +25,7 @@ hs_err_pid*
 
 ## Java
 .mtj.tmp/
-*.class
+
 *.jar
 *.war
 *.ear
