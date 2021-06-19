@@ -9,13 +9,13 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
 
-import com.qa.utils.CommonMethod;
 import com.qa.utils.Utility;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import utilspackage.CommonMethod;
 
 /**
  * @author ujjwal

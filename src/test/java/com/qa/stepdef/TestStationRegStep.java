@@ -5,11 +5,10 @@ package com.qa.stepdef;
 
 import java.io.IOException;
 
-import com.qa.utils.SingletonObject;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import utilspackage.SingletonObject;
 
 /**
  * @author Ujjwal

@@ -3,9 +3,8 @@
  */
 package com.qa.stepdef;
 
-import com.qa.utils.SingletonObject;
-
 import io.cucumber.java.Before;
+import utilspackage.SingletonObject;
 
 /**
  * @author Ujjwal
