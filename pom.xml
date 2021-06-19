@@ -25,12 +25,12 @@
 				<configuration>
 					<forkCount>0</forkCount>
 					<suiteXmlFiles>
-						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>
-			
+
 	</build>
 	<dependencies>
 
@@ -128,16 +128,16 @@
 			<version>2.9.0</version>
 			<scope>test</scope>
 		</dependency>
-	
-	<dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-resources-plugin</artifactId>
-    <version>2.6</version>
-</dependency>
+
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-resources-plugin</artifactId>
+			<version>2.6</version>
+		</dependency>
 	</dependencies>
 	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->
 
 
-	
+
 
 </project>
