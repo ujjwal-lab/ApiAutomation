@@ -18,6 +18,11 @@ Eclipse
 
 Install testng in eclipse
 
+**#Set Up**
+
+Clone this github repo in your local directory. All the required dependencies are added in POM. No external dependencies required. 
+
+
 #**Framework Structure**
 
 Fetaure Files: Feature files has all the scenarios given in the problem statement. A single feature file 'apitesting.feature' conatins all the three scenarios with examples. The feature file has @tag at feature level in order to run the whole feature as well as tags are present at scenairo level to enable execution at scenario level. The feature file is present in location 'src/test/resoucres' .
