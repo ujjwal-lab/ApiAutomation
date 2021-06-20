@@ -1,6 +1,6 @@
 # Api Automation
  
-This project is written in Java and uses Cucumber(gherkin-BDD) alonwith an open source automation tool Rest Assured. This project will serve an example of implementing a API test project with Rest Asured and Maven. Everything is set up and tests can be added straight away. 
+This project is written in Java and uses Cucumber(gherkin-BDD) alongwith an open source automation tool Rest Assured. This project will serve an example of implementing a API test project with Rest Asured and Maven. Everything is set up and tests can be added straight away. 
 
 #**Prerequisites**
 >=JDK8 installed
