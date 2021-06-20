@@ -16,14 +16,16 @@ import org.apache.commons.io.IOUtils;
  *         properties and end point
  *
  */
-public class Utility {
+public class Utilityclass {
 
 	static Properties epProp = new Properties();
 	static Properties authProp = new Properties();
 
 	public static String url;
 
+
 	// Method to get specific end point form properties files
+
 
 	public static String getApiEndpoint(String endpoint) throws IOException {
 
@@ -64,5 +66,9 @@ public class Utility {
 		url = properties.getProperty("Uri");
 		return url;
 
+	}
+
+	public static void setUpSingleTonObject() {
+		new Utilityclass();
 	}
 }

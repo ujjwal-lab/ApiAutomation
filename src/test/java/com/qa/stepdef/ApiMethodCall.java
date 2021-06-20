@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.qa.testcase;
+package com.qa.stepdef;
 
 import java.io.IOException;
 
@@ -10,12 +10,13 @@ import org.json.JSONObject;
 import org.testng.Assert;
 
 import com.qa.utils.CommonMethod;
-import com.qa.utils.Utility;
+import com.qa.utils.Utilityclass;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+
 
 /**
  * @author ujjwal
@@ -29,16 +30,16 @@ public class ApiMethodCall {
 	String body = null;
 
 	public void getValidToken() throws IOException {
-		RestAssured.baseURI = Utility.loadUri();
+		RestAssured.baseURI = Utilityclass.loadUri();
 
 		request = RestAssured.given();
 		request.header("Content-Type", "application/json");
-		token = Utility.getAuthToken();
+		token = Utilityclass.getAuthToken();
 	}
 
 	public void hitPostEndPoint(String pathep, String payload) throws IOException {
-		String path = Utility.getApiEndpoint(pathep);
-		body = Utility.getPayloadfromFile(payload);
+		String path = Utilityclass.getApiEndpoint(pathep);
+		body = Utilityclass.getPayloadfromFile(payload);
 		response = request.when().body(body).queryParam("appid", token).log().all().post(path);
 
 	}
@@ -50,7 +51,7 @@ public class ApiMethodCall {
 	}
 
 	public void getInvalidToken(String tkn) throws IOException {
-		RestAssured.baseURI = Utility.loadUri();
+		RestAssured.baseURI = Utilityclass.loadUri();
 
 		request = RestAssured.given();
 		request.header("Content-Type", "application/json");
@@ -65,13 +66,13 @@ public class ApiMethodCall {
 
 	public void hitGetStationEp(String getstation) throws IOException {
 
-		String path = Utility.getApiEndpoint(getstation);
+		String path = Utilityclass.getApiEndpoint(getstation);
 		response = request.when().queryParam("appid", token).log().all().get(path);
 	}
 
 	public void verifyAddedStation(String data) throws Exception {
 
-		body = Utility.getPayloadfromFile(data);
+		body = Utilityclass.getPayloadfromFile(data);
 		JSONObject js = new JSONObject(body);
 		Boolean flag = false;
 		System.out.println("Body data" + body);
