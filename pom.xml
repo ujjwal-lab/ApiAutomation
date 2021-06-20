@@ -7,31 +7,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 
-
-	<build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.3</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.18.1</version>
-				<configuration>
-					<forkCount>0</forkCount>
-					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
-					</suiteXmlFiles>
-				</configuration>
-			</plugin>
-		</plugins>
-
-	</build>
 	<dependencies>
 
 
@@ -70,13 +45,7 @@
 			<artifactId>selenium-server</artifactId>
 			<version>3.8.1</version>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-		<dependency>
-			<groupId>io.github.bonigarcia</groupId>
-			<artifactId>webdrivermanager</artifactId>
-			<version>3.8.1</version>
-		</dependency>
+		
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
@@ -92,23 +61,6 @@
 		</dependency>
 
 
-		<!-- Extent Reports 4 Plugin -->
-
-		<dependency>
-			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports-cucumber4-adapter</artifactId>
-			<version>1.0.12</version>
-			<exclusions>
-				<exclusion>
-					<groupId>io.cucumber</groupId>
-					<artifactId>cucumber-java</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>io.cucumber</groupId>
-					<artifactId>cucumber-core</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
 
 
 		<dependency>
@@ -124,9 +76,34 @@
 		</dependency>
 
 	</dependencies>
-	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<forkCount>0</forkCount>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
 
 
+
+	</build>
 
 
 </project>

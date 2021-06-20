@@ -1,10 +1,9 @@
 /**
  * 
  */
-package com.qa.stepdef;
+package com.qa.utils;
 
 import io.cucumber.java.Before;
-import utilspackage.SingletonObject;
 
 /**
  * @author Ujjwal

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package utilspackage;
+package com.qa.utils;
 
 import org.testng.Assert;
 

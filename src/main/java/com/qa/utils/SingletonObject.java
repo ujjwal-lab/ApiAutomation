@@ -1,9 +1,9 @@
 /**
  * 
  */
-package utilspackage;
+package com.qa.utils;
 
-import testcase.ApiMethodCall;
+import com.qa.testcase.TestApiCall;
 
 /**
  * @author Ujjwal
@@ -15,14 +15,14 @@ import testcase.ApiMethodCall;
 public class SingletonObject {
 
 	static SingletonObject sinhleOb;
-	ApiMethodCall apicall;
+	TestApiCall apicall;
 
 	/**
 	 * @return the apicall
 	 */
-	public ApiMethodCall getApicall() {
+	public TestApiCall getApicall() {
 		if (apicall == null)
-			apicall = new ApiMethodCall();
+			apicall = new TestApiCall();
 		return apicall;
 	}
 
