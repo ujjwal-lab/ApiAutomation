@@ -21,7 +21,7 @@ import io.restassured.specification.RequestSpecification;
  * @author ujjwal
  *
  */
-public class TestApiCall {
+public class ApiMethodCall {
 
 	RequestSpecification request;
 	Response response;

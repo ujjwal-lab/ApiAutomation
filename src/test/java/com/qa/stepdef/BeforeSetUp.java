@@ -1,9 +1,11 @@
 /**
  * 
  */
-package com.qa.utils;
+package com.qa.stepdef;
 
-import io.cucumber.java.Before;
+import com.qa.utils.*;
+
+import io.cucumber.java.*;
 
 /**
  * @author Ujjwal
@@ -13,6 +15,7 @@ public class BeforeSetUp {
 
 	@Before
 	public static void runSetup() {
+		System.out.println("running setup");
 		SingletonObject.setUpSingleTon();
 	}
 }
