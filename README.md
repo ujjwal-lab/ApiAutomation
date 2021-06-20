@@ -16,6 +16,7 @@ Eclipse
 Install testng in eclipse
 
 #**Framework Structure**
+
 Fetaure Files: Feature files has all the scenarios given in the problem statement. A single feature file 'apitesting.feature' conatins all the three scenarios with examples. The feature file has @tag at scenario level in order to run the whole feature as well as tags are present at scenairo level to enable execution at scenario level. The feature file is present in location 'src/test/resoucres' .
 Step Definition: There are two step definition files one for a psotive scneraio and another for neagtive scenairo. The steps defintion just makes calls to the specific API method function. Step definition can be found at /src/test/java at com.qa.stepdef package
 Api Method Class : This class implement all the function related to API method call and other asserstion that needs to be done. In future based on api endpoints more such APi Method class needs to created for testing those endpoints.
