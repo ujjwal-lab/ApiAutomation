@@ -45,5 +45,7 @@ mvn clean test
 
 #**Reporting**
 The test generate two reports one in HTML and another in .Json format
+
 Html report : target/cucumber-html-report/index.html
+
 Json report : target/cucumber-reports/cucumber.json
