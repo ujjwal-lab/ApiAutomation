@@ -42,6 +42,7 @@ Run the testng.xml file from the IDE and it will trigger the execution of the fe
 2. Command line.
 
 Naviagte to the project repo in your local and run below command. This same command can be used in the CICD tool
+
 mvn clean test
 
 #**Reporting**
