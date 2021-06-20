@@ -7,13 +7,10 @@ This project is written in Java and uses Cucumber(gherkin-BDD) alonwith an open 
 
 #**Used tools and frameworks**
 
-Rest-Assured
-
-Maven repository
-
-TestNG
-
-Cucumber
+1. Rest-Assured
+2. Maven
+3. TestNG
+4. Cucumber
 
 #**IDE**
 
