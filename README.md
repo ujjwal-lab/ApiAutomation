@@ -6,13 +6,19 @@ This project is written in Java and uses Cucumber(gherkin-BDD) alonwith an open 
 >=JDK8 installed
 
 #**Used tools and frameworks**
+
 Rest-Assured
+
 Maven repository
+
 TestNG
+
 Cucumber
 
 #**IDE**
+
 Eclipse
+
 Install testng in eclipse
 
 #**Framework Structure**
